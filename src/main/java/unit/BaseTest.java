@@ -13,12 +13,16 @@ import org.testng.annotations.Listeners;
 import pages.CalculatorTomographyOff;
 import pages.CalculatorTomographyOn;
 import java.util.concurrent.TimeUnit;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Listeners({TestListener.class})
 public class BaseTest {
     protected static final String BASE_URL = "https://gsmu.by/upload/calcForGSMU/calcGSMU.html";
     private Atlas atlas;
     public static WebDriver driver;
+
+
     @BeforeSuite
     public void initDriver() {
         WebDriverManager.chromedriver().setup();
@@ -47,6 +51,7 @@ public class BaseTest {
     }
 
     protected CalculatorTomographyOff onCalculatorTomographyOff() {
+
         return onPage(CalculatorTomographyOff.class);
     }
 

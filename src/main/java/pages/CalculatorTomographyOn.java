@@ -15,6 +15,7 @@ public interface CalculatorTomographyOn extends WebPage, CovidCalcElements {
 
     default void insertDaysSuperHighTemperature(String i) {
         inputDaysTomOnSuperHighFever().sendKeys(i);
+
     }
 
     default String getCalculatedSquareWithTomography() {

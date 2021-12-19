@@ -9,6 +9,7 @@
 При падении тестов, создается снимок(и) экрана, сохраняющиеся в директории target/screens/
 Параметры для тестирования прописаны в тестовом классе, см.аннотации
 Отчет процесса тестирования, времени прохождения тестов находится в разделе target/surefire-reports/index.html
+Логгирование - логи хранятся в директории target/logs/calculator.log
 #### Скриншоты:   
 * Отчет:
 
@@ -16,7 +17,9 @@
  
 ![target/surefire-reports/index.html](img/report_timing.jpg)   
   
-![target/surefire-reports/index.html](img/report_timing_proc.jpg)
+![target/surefire-reports/index.html](img/report_timing_proc.jpg)   
+* Логфайл - calculator.log:   
+![target/logs/calculator.log](img/logfile.jpg)
 * Образцы скриншотов. Создаются при падении тестов в директории target/screens:   
 
 ![target/screens](img/screenshots2021-12-18_13-25-29.png)   
